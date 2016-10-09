@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "House.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
+        House *myHouse = [[House alloc] init];
+        NSLog(@"%@", myHouse.address);
         NSLog(@"Hello, World!");
     }
     return 0;
